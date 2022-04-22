@@ -21,4 +21,4 @@ git clone -b heroku $REPO_URL Alty
 cd Alty
 pip3 install -U -r requirements.txt
 _externals
-
+python $PYTHON_FILE
