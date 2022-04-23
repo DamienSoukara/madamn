@@ -1,1 +1,1 @@
-worker: bash do
+worker: bash doit
