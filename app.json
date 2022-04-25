@@ -1,31 +1,41 @@
 {
-  "name": "hkmanager",
-  "description": "With this you can deploy repos that are * by heroku",
-  "keywords": [
-    "telegram",
-    "open",
-    "source",
-    "multi",
-    "purpose",
-    "remote",
-  ],
-  "env": {
-    "REPO_URL": {
-      "description": "URL of the REPO that you want to deploy.",
-      "value": ""
+    "name": "Telegram Bot",
+    "description": "Template",
+    "keywords": [
+        "telegram",
+        "bot",
+        "Alty"
+    ],
+    "repository": "https://github.com/AmineSoukara/Alty",
+    "logo": "https://i.imgur.com/CIFhGHN.jpg",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot token, Get it from @Botfather",
+            "value": ""
+        },
+        "REPO_URL": {
+            "description": "t",
+            "value": ""
+        },
+        "PYTHON_FILE": {
+            "description": "t",
+            "value": ""
+        },
+        "ADMINS": {
+            "description": "A space separated list of user_ids of Admins",
+            "value": "",
+            "required": false
+        }
     },
-    "PYTHON_FILE": {
-      "description": "Name of the python file that you need to run. [use -m if you need to run __main__.py from a folder]",
-      "value": ""
-    },
-  },
-  "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
+    "buildpacks": [
+        {
+        "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-  }
 }
