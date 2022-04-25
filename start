@@ -17,11 +17,11 @@ apt update && apt upgrade -y
 apt install git -y
 _other_installs
 pip3 install -U pip
-git clone -b $BRANCH $REPO_URL Repo
+git clone -b heroku $REPO_URL Repo
 rm Procfile
 rm requirements.txt
 rm README.md
 mv Repo/* .
 pip3 install -U -r requirements.txt
 _externals
-python $PYTHON_FILE
+gunicorn Api.main:app --timeout 100 --log-file=-
