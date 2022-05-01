@@ -1,1 +1,1 @@
-worker: bash doit
+worker: python3 -m Skye
