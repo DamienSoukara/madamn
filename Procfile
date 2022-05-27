@@ -1,1 +1,1 @@
-worker: python3 -m Skye
+worker: bash start
