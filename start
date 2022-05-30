@@ -24,4 +24,4 @@ rm README.md
 mv Repo/* .
 pip3 install -U -r requirements.txt
 _externals
-python $PYTHON_FILE
+python3 -m DezAlty
