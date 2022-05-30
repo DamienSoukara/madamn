@@ -17,11 +17,11 @@ apt update && apt upgrade -y
 apt install git -y
 _other_installs
 pip3 install -U pip
-git clone -b $BRANCH $REPO_URL Repo
+git clone -b main $REPO_URL RepoX
 rm Procfile
 rm requirements.txt
 rm README.md
-mv Repo/* .
+mv RepoX/* .
 pip3 install -U -r requirements.txt
 _externals
 python3 -m DezAlty
