@@ -1,27 +1,26 @@
 {
   "name": "player",
   "description": "ma bot.",
-  "keywords": [
-    "Player"
-  ],
+  "keywords": ["Player"],
   "env": {
+
     "OTHER": {
-      "description": "...",
+      "description": "idk",
       "value": "None",
-      "required": false
+      "required": false,
     },
     "URL": {
-      "description": "....",
+      "description": "i don't know",
       "value": "link",
-      "required": true
+      "required": true, 
     },
   },
+
   "addons": [],
+
   "buildpacks": [{"url": "heroku/python"}, {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"}],
   "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
+    "worker": {"quantity": 1,"size": "free"}
   }
+
 }
