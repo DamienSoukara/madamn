@@ -1,36 +1,20 @@
 {
-  "name": "HerokuBanBypass-Deployer",
-  "description": "With this you can deploy Repos that are banned/blacklisted by Heroku.",
+  "name": "player",
+  "description": "ma bot.",
   "keywords": [
-    "telegram",
-    "open",
-    "source",
-    "multi",
-    "purpose",
-    "remote",
-    "deployer"
+    "Player"
   ],
   "env": {
-    "OTHER_INSTALLS": {
-      "description": "If you need install packages for running your app, fill with space in between each package.Get them from the requirements file of the repo you want to deploy",
+    "OTHER": {
+      "description": "...",
       "value": "None",
       "required": false
     },
-    "REPO_URL": {
-      "description": "Enter the repository link that you want to deploy",
-      "value": "https://github.com/missemily2022/HerokuBanBypass",
+    "URL": {
+      "description": "....",
+      "value": "link",
       "required": true
     },
-    "PYTHON_FILE": {
-      "description": "Name of the python file that you need to run [use -m if you need to run __main__.py from a folder]",
-      "value": "main.py",
-      "required": true
-    },
-     "OTHER_CMD": {
-      "description": "If you need to run any bash command other than python specify here",
-      "value": "None",
-      "required": false
-    }
   },
   "addons": [],
   "buildpacks": [{"url": "heroku/python"}, {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"}],
